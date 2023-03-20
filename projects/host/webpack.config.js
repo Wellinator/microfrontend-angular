@@ -12,6 +12,7 @@ module.exports = {
   output: {
     uniqueName: "host",
     publicPath: "auto",
+    scriptType: "text/javascript",
   },
   optimization: {
     runtimeChunk: false,
@@ -21,12 +22,17 @@ module.exports = {
       ...sharedMappings.getAliases(),
     },
   },
+  experiments: {
+    outputModule: true,
+  },
   plugins: [
     new ModuleFederationPlugin({
+      library: { type: "module" },
+
       remotes: {
-        mfe1: "mfe1@http://localhost:4201/remoteEntry.js",
-        mfe2: "mfe2@http://localhost:4202/remoteEntry.js",
-        mfe3: "mfe3@http://localhost:4203/remoteEntry.js",
+        mfe1: "http://localhost:4201/remoteEntry.js",
+        mfe2: "http://localhost:4202/remoteEntry.js",
+        mfe3: "http://localhost:4203/remoteEntry.js",
       },
 
       shared: share({

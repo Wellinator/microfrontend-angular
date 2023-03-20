@@ -85,7 +85,8 @@
 					"defaultConfiguration": "development",
 					"options": {
 						"port": 4200,
-						"extraWebpackConfig": "projects/host/webpack.config.js"
+						"extraWebpackConfig": "projects/host/webpack.config.js",
+						"publicHost": "http://localhost:4200"
 					}
 				},
 				"extract-i18n": {
@@ -197,7 +198,8 @@
 					"defaultConfiguration": "development",
 					"options": {
 						"port": 4201,
-						"extraWebpackConfig": "projects/mfe1/webpack.config.js"
+						"extraWebpackConfig": "projects/mfe1/webpack.config.js",
+						"publicHost": "http://localhost:4201"
 					}
 				},
 				"extract-i18n": {
@@ -309,7 +311,8 @@
 					"defaultConfiguration": "development",
 					"options": {
 						"port": 4202,
-						"extraWebpackConfig": "projects/mfe2/webpack.config.js"
+						"extraWebpackConfig": "projects/mfe2/webpack.config.js",
+						"publicHost": "http://localhost:4202"
 					}
 				},
 				"extract-i18n": {
@@ -421,7 +424,8 @@
 					"defaultConfiguration": "development",
 					"options": {
 						"port": 4203,
-						"extraWebpackConfig": "projects/mfe3/webpack.config.js"
+						"extraWebpackConfig": "projects/mfe3/webpack.config.js",
+						"publicHost": "http://localhost:4203"
 					}
 				},
 				"extract-i18n": {

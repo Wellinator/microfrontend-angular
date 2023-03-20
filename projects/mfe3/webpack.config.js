@@ -21,13 +21,19 @@ module.exports = {
       ...sharedMappings.getAliases(),
     },
   },
+  experiments: {
+    outputModule: true,
+  },
   plugins: [
     new ModuleFederationPlugin({
+      library: { type: "module" },
+
       name: "mfe3",
       filename: "remoteEntry.js",
       exposes: {
         "./Component": "./projects/mfe3/src/app/app.component.ts",
       },
+
       shared: share({
         "@angular/core": {
           singleton: true,
