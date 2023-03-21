@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { loadRemoteModule } from '@angular-architects/module-federation';
+import { LoginComponent } from './components/login/login.component';
+import { LogoutComponent } from './components/logout/logout.component';
 
 const routes: Routes = [
   {
@@ -34,6 +36,13 @@ const routes: Routes = [
   //       exposedModule: './ComponentAModule',
   //     }).then((m) => m.ComponentAModule),
   // },
+
+  {
+    path: '**',
+    redirectTo: 'login',
+  },
+  { path: 'login', component: LoginComponent },
+  { path: 'logout', component: LogoutComponent },
 ];
 
 @NgModule({
