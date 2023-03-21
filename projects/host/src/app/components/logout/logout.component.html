@@ -1,0 +1,7 @@
+<h1>Logout!</h1>
+
+<p *ngIf="user$ | async as user">
+    User: {{user.name}}
+</p>
+
+<button class="btn btn-danger btn-block" (click)="logout()">Log out</button>
