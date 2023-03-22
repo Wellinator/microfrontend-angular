@@ -8,9 +8,10 @@ import { environment as env } from '../environments/environment';
 import { AuthModule } from '@auth0/auth0-angular';
 import { LoginComponent } from './components/login/login.component';
 import { LogoutComponent } from './components/logout/logout.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, LoginComponent, LogoutComponent],
+  declarations: [AppComponent, HomeComponent, LoginComponent, LogoutComponent, HeaderComponent],
   providers: [],
   bootstrap: [AppComponent],
   imports: [
