@@ -9,6 +9,7 @@ import { AuthModule } from '@auth0/auth0-angular';
 import { LoginComponent } from './components/login/login.component';
 import { LogoutComponent } from './components/logout/logout.component';
 import { HeaderComponent } from './components/header/header.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { HeaderComponent } from './components/header/header.component';
     LoginComponent,
     LogoutComponent,
     HeaderComponent,
+    SidebarComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],
