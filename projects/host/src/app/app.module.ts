@@ -11,7 +11,13 @@ import { LogoutComponent } from './components/logout/logout.component';
 import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, LoginComponent, LogoutComponent, HeaderComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    LoginComponent,
+    LogoutComponent,
+    HeaderComponent,
+  ],
   providers: [],
   bootstrap: [AppComponent],
   imports: [
