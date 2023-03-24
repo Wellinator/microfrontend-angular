@@ -1,7 +1,10 @@
-<header-component></header-component>
-<sidebar-component></sidebar-component>
-<!--Container Main start-->
-<div class="height-100 bg-light content-container">
-    <!--Container Main end-->
-    <router-outlet></router-outlet>
+<div class="wrapper" id="body-pd">
+    <sidebar-component></sidebar-component>
+    <div id="content" class="bg-light">
+        <header-component></header-component>
+
+        <div class="height-100 bg-light content-container">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
 </div>

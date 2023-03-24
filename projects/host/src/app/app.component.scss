@@ -1,3 +1,14 @@
+div#content {
+  position: relative;
+  width: -webkit-fill-available;
+}
+
 .content-container {
-  padding: 1rem 0;
+  padding: 1rem;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
 }
