@@ -15,19 +15,8 @@ export class HeaderComponent {
     @Inject(DOCUMENT) public document: Document
   ) {}
 
-  public toggleNavBar(event: any) {
-    const toggle = this.document.getElementById('header-toggle');
+  public toggleNavBar() {
     const nav = this.document.getElementById('nav-bar');
-    const bodypd = this.document.getElementById('body-pd');
-    const headerpd = this.document.getElementById('header');
-
-    // show navbar
     nav?.classList.toggle('show');
-    // change icon
-    toggle?.classList.toggle('bx-x');
-    // add padding to body
-    bodypd?.classList.toggle('body-pd');
-    // add padding to header
-    headerpd?.classList.toggle('body-pd');
   }
 }
