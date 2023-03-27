@@ -32,6 +32,8 @@ module.exports = {
       filename: "remoteEntry.js",
       exposes: {
         "./Component": "./projects/mfe2/src/app/app.component.ts",
+        "./ComponentCModule":
+          "./projects/mfe2/src/app/components/component-c/component-c.module.ts",
       },
 
       shared: share({
