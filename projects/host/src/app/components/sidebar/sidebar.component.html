@@ -14,6 +14,10 @@
                     <i class="bi bi-dice-1 nav_icon"></i>
                     <span class="nav_name">Micro Frontend 1</span>
                 </a>
+                <a routerLink="mfe2" [ngClass]="{active: isActive('/mfe2')}" class="nav_link">
+                    <i class="bi bi-dice-2 nav_icon"></i>
+                    <span class="nav_name">Micro Frontend 2</span>
+                </a>
             </div>
         </div>
         <a routerLink="logout" [ngClass]="{active: isActive('/logout')}" class="nav_link">
