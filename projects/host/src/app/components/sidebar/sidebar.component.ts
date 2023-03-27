@@ -1,7 +1,6 @@
 import { DOCUMENT } from '@angular/common';
 import { Component, Inject } from '@angular/core';
 import { Router } from '@angular/router';
-import { AuthService } from '@auth0/auth0-angular';
 
 @Component({
   selector: 'sidebar-component',
@@ -9,10 +8,7 @@ import { AuthService } from '@auth0/auth0-angular';
   styleUrls: ['./sidebar.style.scss'],
 })
 export class SidebarComponent {
-  user$ = this.auth.user$;
-
   constructor(
-    public auth: AuthService,
     public route: Router,
     @Inject(DOCUMENT) public document: Document
   ) {}

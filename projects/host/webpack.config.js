@@ -56,12 +56,6 @@ module.exports = {
           strictVersion: true,
           requiredVersion: "auto",
         },
-        "@auth0/auth0-angular": {
-          singleton: true,
-          strictVersion: true,
-          requiredVersion: "auto",
-        },
-
         ...sharedMappings.getDescriptors(),
       }),
     }),
