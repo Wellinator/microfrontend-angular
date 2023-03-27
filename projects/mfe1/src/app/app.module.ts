@@ -3,18 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AuthModule } from '@auth0/auth0-angular';
-import { environment as env } from '../environments/environment';
+import { Mfe1Module } from './mfe1.module';
+import { SidebarModule } from 'projects/host/src/app/components/sidebar/sidebar.module';
+import { HeaderModule } from 'projects/host/src/app/components/header/header.module';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AuthModule.forRoot({
-      domain: env.domain,
-      clientId: env.clientId,
-    }),
+    SidebarModule,
+    HeaderModule,
+    Mfe1Module,
   ],
   providers: [],
   bootstrap: [AppComponent],
